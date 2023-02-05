@@ -1,1 +1,420 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Blockchain lottery"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>Coin Lottery</title><script defer="defer" src="/static/js/main.0ce07ac8.js"></script><link href="/static/css/main.ff219ee5.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>CoinLottery - Crypto Lottery</title>
+        <meta name="description" content="Buy a ticket with crypto and get higher odds of winning the lottery"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+
+        <!-- ========= CSS ========= -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/animate.css" />
+        <link rel="stylesheet" href="assets/css/lottery.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/faded.css" />
+        <link rel="stylesheet" href="assets/css/elements.css" />
+        <link rel="stylesheet" href="assets/css/timeline.css" />
+
+        <!-- ========= JS ========= -->
+        <script src="https://kit.fontawesome.com/a95582295a.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="preloader-inner">
+                <div class="preloader-icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <!-- /End Preloader -->
+
+        <!-- Start Header Area -->
+        <header class="header navbar-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <div class="nav-inner">
+                            <!-- Start Navbar -->
+                            <nav class="navbar navbar-expand-lg">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="assets/images/CoinLottery-Logo.png" alt="Coin Lottery" id="logo">
+                                </a>
+                            </nav>
+                            <!-- End Navbar -->
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </header>
+        <!-- End Header Area -->
+
+        <!-- Start Hero Area -->
+        <section id="home" class="top-area">
+            <div class="container" id="subscribe">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div class="hero-content">
+                            <h1 class="wow fadeInLeft" data-wow-delay=".4s">Decentralized Lottery</h1>
+                            <p class="wow fadeInLeft" data-wow-delay=".6s">Buy a ticket with crypto and get higher odds of winning the lottery.</p>
+                            <p class="wow fadeInLeft" data-wow-delay=".7s">CoinLottery is a blockchain lottery that can be played from anywhere, prizes transacted immediately after drawing the numbers and received within an hour.</p>
+                            <div class="button wow fadeInLeft" data-wow-delay=".8s">
+                                <script charset="utf-8" type="text/javascript" src="https://js-eu1.hsforms.net/forms/shell.js"></script>
+                                <script>
+                                    hbspt.forms.create({
+                                        region: "eu1",
+                                        portalId: "25565289",
+                                        formId: "55b49f35-5391-4375-9f16-2251e3493b1f"
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-12">
+                        <div class="hero-image wow fadeInRight" data-wow-delay=".4s">
+                            <span class="faded faded-left faded-right faded-bottom">
+                                <img src="assets/images/coin-lottery.jpeg" id="coins">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Area -->
+
+        <!-- Start Achievement Area -->
+        <section class="info-area section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-12 mt-70">
+                        <div class="title">
+                            <h1>Why?</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12 mt-70">
+                        <div class="title">
+                            <h3>Fiat (Classic) Lottery</h3>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".1s">
+                                                <h4><span class="negative">-</span> Prize pool up to <span id="secondo1" class="countup" cup-end="60">60</span>%</h4>
+                                                <p>The majority of the funds that the lottery brings in — usually around 50 to 60% — is distributed to the winners. This includes big jackpots and the smaller prizes for matching fewer lottery numbers.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                                                <h4><span class="negative">-</span> Low odds of winning 1 in <span id="secondo2" class="countup" cup-end="300">300</span> million</h4>
+                                                <p>The odds of winning the Powerball jackpot are 1 in 292.2 million. The odds of winning the Mega Millions jackpot are even lower, 1 in 302.6 million. Even if you buy two tickets, doubling your odds of winning, they are still extremely low.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".3s">
+                                                <h4><span class="negative">-</span> Claiming is painfull, up to <span id="secondo3" class="countup" cup-end="180">180</span> days in the USA</h4>
+                                                <p>If you're wondering how long do you have to claim a lottery ticket when you win playing Mega Millions or Powerball, you'll be glad to hear that most states give at least 180 days. In the UK that process takes from a few days to two weeks.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                                                <h4><span class="negative">-</span> 1 million is not 1 million in a year</h4>
+                                                <p>Big lottery prizes are usually paid in portions. But because of the inflation 1 000 000 is worth much less in a year.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".5s">
+                                                <h4><span class="negative">-</span> Privacy not guaranteed</h4>
+                                                <p>Your privacy is not guaranteed.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".6s">
+                                                <h4><span class="negative">-</span> Region based</h4>
+                                                <p>The classic fiat lottery is region based meaning that you can't play a UK based lottery from the USA.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12 mt-70">
+                        <div class="title">
+                            <h3>Coin Lottery</h3>
+                            <div class="arrow arrow--top">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="270.11" height="649.9" overflow="visible">
+                                    <style>
+                                        .geo-arrow {
+                                        fill: none;
+                                        stroke: #cecfd4;
+                                        stroke-width: 2;
+                                        stroke-miterlimit: 10
+                                        }
+                                    </style>
+                                    <g class="item-to bounce-1">
+                                        <path class="geo-arrow draw-in" d="M135.06 142.564L267.995 275.5 135.06 408.434 2.125 275.499z" />
+                                    </g>
+                                    <circle class="geo-arrow item-to bounce-2" cx="194.65" cy="69.54" r="7.96" />
+                                    <circle class="geo-arrow draw-in" cx="194.65" cy="39.5" r="7.96" />
+                                    <circle class="geo-arrow item-to bounce-3" cx="194.65" cy="9.46" r="7.96" />
+                                    <g class="geo-arrow item-to bounce-2">
+                                        <path class="st0 draw-in" d="M181.21 619.5l13.27 27 13.27-27zM194.48 644.5v-552" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".1s">
+                                                <h4><span class="positive">+</span> Prize pool <span id="secondo1" class="countup" cup-end="80">80</span>%</h4>
+                                                <p>CoinLottery is based on blockchain technology allowing automation of most of the business processes via smart contracts and reducing the running costs in favour to increasing the prize pool.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".2s">
+                                                <h4><span class="positive">+</span> Higher odds of winning</h4>
+                                                <p>By reducing the running costs of the business - and increasing the prize pool - we are able to increase the odds of winning.</p>
+                                            </div>
+                                        </div>
+                                        <div class="main__text-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="dotted-circle" width="352" height="352" overflow="visible">
+                                                <circle cx="176" cy="176" r="174" fill="none" stroke="#323b6e" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="12.921,11.9271"/>
+                                            </svg>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".3s">
+                                                <h4><span class="positive">+</span> Claiming is painless, within <span id="secondo3" class="countup" cup-end="1">1</span> hour</h4>
+                                                <p>The smart contracts behind CoinLottery transact the prizes immediately after drawing the numbers.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".4s">
+                                                <h4><span class="positive">+</span> 1 million today is 1 million today</h4>
+                                                <p>The winner receives the prize within an hour depending on the busyness of the blockchain network.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".5s">
+                                                <h4><span class="positive">+</span> Play from anywhere</h4>
+                                                <p>CoinLottery is not region based. It can be played from anywhere with Internet connection.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-12">
+                                            <div class="single-achievement wow fadeInUp" data-wow-delay=".5s">
+                                                <a href="https://www.facebook.com/coinlotterybet/" target="_blank" class="social"><i class="fa-brands fa-facebook"></i></a>
+                                                <a href="https://twitter.com/CoinLotteryBet" target="_blank" class="social"><i class="fa-brands fa-twitter"></i></a>
+                                                <a href="https://www.linkedin.com/company/coinlottery/" target="_blank" class="social"><i class="fa-brands fa-linkedin"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Achievement Area -->
+
+        <!-- Start Achievement Area -->
+        <section class="info-area section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-12 col-12 mt-70" id="stage">
+                        <div id="rotate">
+                            <div id="ring-1" class="ring">
+                                <div class="poster" style="transform: rotateY(0deg) translateZ(200px);"><p>1</p></div>
+                                <div class="poster" style="transform: rotateY(22.5deg) translateZ(200px);"><p>2</p></div>
+                                <div class="poster" style="transform: rotateY(45deg) translateZ(200px);"><p>3</p></div>
+                                <div class="poster" style="transform: rotateY(67.5deg) translateZ(200px);"><p>4</p></div>
+                                <div class="poster" style="transform: rotateY(90deg) translateZ(200px);"><p>5</p></div>
+                                <div class="poster" style="transform: rotateY(112.5deg) translateZ(200px);"><p>6</p></div>
+                                <div class="poster" style="transform: rotateY(135deg) translateZ(200px);"><p>7</p></div>
+                                <div class="poster" style="transform: rotateY(157.5deg) translateZ(200px);"><p>8</p></div>
+                                <div class="poster" style="transform: rotateY(180deg) translateZ(200px);"><p>9</p></div>
+                                <div class="poster" style="transform: rotateY(202.5deg) translateZ(200px);"><p>10</p></div>
+                                <div class="poster" style="transform: rotateY(225deg) translateZ(200px);"><p>11</p></div>
+                                <div class="poster" style="transform: rotateY(247.5deg) translateZ(200px);"><p>12</p></div>
+                                <div class="poster" style="transform: rotateY(270deg) translateZ(200px);"><p>13</p></div>
+                                <div class="poster" style="transform: rotateY(292.5deg) translateZ(200px);"><p>14</p></div>
+                                <div class="poster" style="transform: rotateY(315deg) translateZ(200px);"><p>15</p></div>
+                                <div class="poster" style="transform: rotateY(337.5deg) translateZ(200px);"><p>16</p></div>
+                                </div>
+                            <div id="ring-2" class="ring">
+                                <div class="poster" style="transform: rotateY(0deg) translateZ(200px);"><p>17</p></div>
+                                <div class="poster" style="transform: rotateY(22.5deg) translateZ(200px);"><p>18</p></div>
+                                <div class="poster" style="transform: rotateY(45deg) translateZ(200px);"><p>19</p></div>
+                                <div class="poster" style="transform: rotateY(67.5deg) translateZ(200px);"><p>20</p></div>
+                                <div class="poster" style="transform: rotateY(90deg) translateZ(200px);"><p>21</p></div>
+                                <div class="poster" style="transform: rotateY(112.5deg) translateZ(200px);"><p>22</p></div>
+                                <div class="poster" style="transform: rotateY(135deg) translateZ(200px);"><p>23</p></div>
+                                <div class="poster" style="transform: rotateY(157.5deg) translateZ(200px);"><p>24</p></div>
+                                <div class="poster" style="transform: rotateY(180deg) translateZ(200px);"><p>25</p></div>
+                                <div class="poster" style="transform: rotateY(202.5deg) translateZ(200px);"><p>26</p></div>
+                                <div class="poster" style="transform: rotateY(225deg) translateZ(200px);"><p>27</p></div>
+                                <div class="poster" style="transform: rotateY(247.5deg) translateZ(200px);"><p>28</p></div>
+                                <div class="poster" style="transform: rotateY(270deg) translateZ(200px);"><p>29</p></div>
+                                <div class="poster" style="transform: rotateY(292.5deg) translateZ(200px);"><p>30</p></div>
+                                <div class="poster" style="transform: rotateY(315deg) translateZ(200px);"><p>31</p></div>
+                                <div class="poster" style="transform: rotateY(337.5deg) translateZ(200px);"><p>32</p></div>
+                            </div>
+                            <div id="ring-3" class="ring">
+                                <div class="poster" style="transform: rotateY(0deg) translateZ(200px);"><p>33</p></div>
+                                <div class="poster" style="transform: rotateY(22.5deg) translateZ(200px);"><p>34</p></div>
+                                <div class="poster" style="transform: rotateY(45deg) translateZ(200px);"><p>35</p></div>
+                                <div class="poster" style="transform: rotateY(67.5deg) translateZ(200px);"><p>36</p></div>
+                                <div class="poster" style="transform: rotateY(90deg) translateZ(200px);"><p>37</p></div>
+                                <div class="poster" style="transform: rotateY(112.5deg) translateZ(200px);"><p>38</p></div>
+                                <div class="poster" style="transform: rotateY(135deg) translateZ(200px);"><p>39</p></div>
+                                <div class="poster" style="transform: rotateY(157.5deg) translateZ(200px);"><p>40</p></div>
+                                <div class="poster" style="transform: rotateY(180deg) translateZ(200px);"><p>41</p></div>
+                                <div class="poster" style="transform: rotateY(202.5deg) translateZ(200px);"><p>42</p></div>
+                                <div class="poster" style="transform: rotateY(225deg) translateZ(200px);"><p>43</p></div>
+                                <div class="poster" style="transform: rotateY(247.5deg) translateZ(200px);"><p>44</p></div>
+                                <div class="poster" style="transform: rotateY(270deg) translateZ(200px);"><p>45</p></div>
+                                <div class="poster" style="transform: rotateY(292.5deg) translateZ(200px);"><p>46</p></div>
+                                <div class="poster" style="transform: rotateY(315deg) translateZ(200px);"><p>47</p></div>
+                                <div class="poster" style="transform: rotateY(337.5deg) translateZ(200px);"><p>48</p></div>
+                                </div>
+                        </div>
+                        <div id="interested-middle" class="mt-150" style="text-align: center;">
+                            <h3>Interested?</h3>
+                            <div class="button wow fadeInUp" data-wow-delay=".3s">
+                                <a href="#subscribe" class="btn">Subscribe to the Newsletter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-12 col-12 mt-70">
+                        <div class="title">
+                            <h3>Next?</h3>
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-12">
+                                    <div class="box">
+                                        <ul id="first-list">
+                                            <li>
+                                                <span></span>
+                                                <div class="title">PHASE 1</div>
+                                                <div class="info">
+                                                    <p>&#9642; Develop a website</p>
+                                                    <p>&#9643; Develop a white paper for the community to learn more about CoinLottery team</p>
+                                                    <p>&#9643; Develop Discord & social media communities</p>
+                                                    <p>&#9643; Identify charity organisations and create partnerships</p>
+                                                    <p>&#9643; Identify investors for staking</p>
+                                                    <p>&#9643; Deploy CoinLottery token</p>
+                                                    <p>&#9643; Design marketing strategy</p>
+                                                </div>
+                                                <div class="name"></div>
+                                                <div class="time">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span></span>
+                                                <div class="title">PHASE 2</div>
+                                                <div class="info">
+                                                    <p>&#9643; Certify our smart contract with an independent reputable audit service</p>
+                                                    <p>&#9643; Identify businesses and potential celebrity endorsements and partnerships</p>
+                                                    <p>&#9643; Generate global press releases about CoinLottery charity organization and our community efforts to donate</p>
+                                                    <p>&#9643; Make the first donation</p>
+                                                </div>
+                                                <div class="name"></div>
+                                                <div class="time">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span></span>
+                                                <div class="title">PHASE 3</div>
+                                                <div class="info">
+                                                    <p>&#9643; List CoinLottery token on DEX (Decentralized Exchanges)</p>
+                                                    <p>&#9643; Begin development of the CoinLottery app</p>
+                                                    <p>&#9643; Coinmarketcap and CoinGecko listing</p>
+                                                    <p>&#9643; PR Campaign on listing on CoinMarketCap and CoinGecko</p>
+                                                    <p>&#9643; Coinsniper listing</p>
+                                                    <p>&#9643; Apply for Trust Wallet/Metamask Logo and Listing</p>
+                                                    <p>&#9643; List on first CEX (Centralized Exchanges)</p>
+                                                </div>
+                                                <div class="name"></div>
+                                                <div class="time">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span></span>
+                                                <div class="title">PHASE 4</div>
+                                                <div class="info">
+                                                    <p>&#9643; Commercial advertising of CoinLottery token</p>
+                                                    <p>&#9643; Increase outreach</p>
+                                                    <p>&#9643; Create CoinLottery merchandise store to help support the charity cause</p>
+                                                    <p>&#9643; Show dedication to donating through the organization by hosting fundraising events, social gatherings, and more</p>
+                                                    <p>&#9643; Metaverse incorporation</p>
+                                                    <p>&#9643; Create and register our own foundation for global causes</p>
+                                                </div>
+                                                <div class="name"></div>
+                                                <div class="time">
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-50">
+                    <div class="col-lg-12 col-md-12 col-12 mt-70" style="text-align: center;">
+                        <div id="interested-bottom">
+                            <h3>Interested?</h3>
+                            <div class="button">
+                                <a href="#subscribe" class="btn">Subscribe to the Newsletter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Achievement Area -->
+
+        <!-- Footer -->
+        <section class="section call-action">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="cta-content">
+                            <small class="copyrights">Copyright © 2022, CoinLottery. All rights reserved.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Footer -->
+
+        <!-- ========= JS ========= -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/count-up.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script type="text/javascript">
+            var cup = new counterUp({
+                start: 0,
+                duration: 3000,
+                intvalues: true,
+                interval: 90,
+                append: " ",
+            });
+            cup.start();
+        </script>
+    </body>
+</html>
